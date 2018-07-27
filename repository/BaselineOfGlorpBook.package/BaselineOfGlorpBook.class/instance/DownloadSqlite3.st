@@ -2,7 +2,7 @@ as yet unclassified
 DownloadSqlite3
 	| client libDir dllZipName dllName dllDefName tmpFile |
 	Win32Platform isActivePlatform
-		ifTrue: [ libDir := SmalltalkImage current vmDirectory fullName , FileSystem disk delimiter asString.
+		ifTrue: [ libDir := SmalltalkImage current vmDirectory , FileSystem disk delimiter asString.
 			dllZipName := 'sqlite-dll-win32-x86-3190300.zip'.
 			dllDefName := 'sqlite3.def'.
 			dllName := 'sqlite3.dll'.
