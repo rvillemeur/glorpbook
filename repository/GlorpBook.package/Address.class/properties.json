@@ -6,12 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"firstName",
-		"lastName",
-		"addresses",
-		"invoices",
-		"tags"
+		"street",
+		"number",
+		"city",
+		"zip"
 	],
-	"name" : "Person",
+	"name" : "Address",
 	"type" : "normal"
 }
