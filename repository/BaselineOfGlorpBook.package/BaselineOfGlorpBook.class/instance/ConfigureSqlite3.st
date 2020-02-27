@@ -1,4 +1,4 @@
-as yet unclassified
+configuration
 ConfigureSqlite3
 	self ConfigureGlorpWithSqlite3.
 	self UpdateUDBCSqlite3

@@ -1,4 +1,4 @@
-as yet unclassified
+configuration
 ConfigureGlorpWithSqlite3
 	GlorpSQLite3CIConfiguration new configureSqlite3.
 	GlorpDemoTablePopulatorResource invalidateSetup
