@@ -1,11 +1,11 @@
 accessing
 DownloadSqlite3
 	| client libDir dllZipName dllName dllDefName tmpFile |
-	Win32Platform isActivePlatform
+	Win64Platform isActivePlatform
 		ifFalse: [ ^ self ].
 	libDir := SmalltalkImage current vmDirectory
 		, FileSystem disk delimiter asString.
-	dllZipName := 'sqlite-dll-win64-x64-3310100.zip'.
+	dllZipName := 'sqlite-dll-win32-x86-3380200.zip'.
 	dllDefName := 'sqlite3.def'.
 	dllName := 'sqlite3.dll'.
 	{dllZipName.
@@ -16,7 +16,7 @@ DownloadSqlite3
 			tmpFile exists
 				ifTrue: [ tmpFile delete ] ].
 	client := ZnClient new timeout: 10.
-	client get: 'https://sqlite.org/2020/' , dllZipName.
+	client get: 'https://sqlite.org/2022/' , dllZipName.
 	client isSuccess
 		ifTrue: [ client downloadTo: libDir ].
 	tmpFile := ZipArchive new readFrom: libDir , dllZipName.
