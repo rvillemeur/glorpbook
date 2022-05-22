@@ -5,7 +5,7 @@ DownloadSqlite3
 		ifFalse: [ ^ self ].
 	libDir := SmalltalkImage current vmDirectory
 		, FileSystem disk delimiter asString.
-	dllZipName := 'sqlite-dll-win32-x86-3380200.zip'.
+	dllZipName := 'sqlite-dll-win64-x64-3380500.zip'.
 	dllDefName := 'sqlite3.def'.
 	dllName := 'sqlite3.dll'.
 	{dllZipName.
