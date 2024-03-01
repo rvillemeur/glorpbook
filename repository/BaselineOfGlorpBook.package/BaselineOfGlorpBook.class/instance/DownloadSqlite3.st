@@ -5,7 +5,7 @@ DownloadSqlite3
 		ifFalse: [ ^ self ].
 	libDir := SmalltalkImage current vmDirectory
 		, FileSystem disk delimiter asString.
-	dllZipName := 'sqlite-dll-win64-x64-3380500.zip'.
+	dllZipName := 'sqlite-dll-win-x86-3450100.zip'.
 	dllDefName := 'sqlite3.def'.
 	dllName := 'sqlite3.dll'.
 	{dllZipName.
@@ -16,7 +16,7 @@ DownloadSqlite3
 			tmpFile exists
 				ifTrue: [ tmpFile delete ] ].
 	client := ZnClient new timeout: 10.
-	client get: 'https://sqlite.org/2022/' , dllZipName.
+	client get: 'https://sqlite.org/2024/' , dllZipName.
 	client isSuccess
 		ifTrue: [ client downloadTo: libDir ].
 	tmpFile := ZipArchive new readFrom: libDir , dllZipName.
