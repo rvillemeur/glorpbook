@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "RenaudDeVillemeur 3/1/2024 18:38",
+	"super" : "Object",
+	"category" : "GlorpBook-Example",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id"
+	],
+	"name" : "Sqlite3Example",
+	"type" : "normal"
+}

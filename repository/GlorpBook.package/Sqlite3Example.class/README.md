@@ -1,0 +1,1 @@
+A collection of method taken from [Sqlite3 binding documentation](https://github.com/pharo-rdbms/Pharo-SQLite3/blob/master/doc/getting_started.md)

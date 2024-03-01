@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "RenaudDeVillemeur 3/1/2024 18:19",
+	"super" : "PackageManifest",
+	"category" : "GlorpBook-Manifest",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ManifestGlorpBook",
+	"type" : "normal"
+}
