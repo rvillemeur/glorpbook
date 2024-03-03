@@ -1,4 +1,4 @@
-tables
+descriptions
 descriptorForPerson: aDescriptor
 	| table linkTable |
 	table := self tableNamed: 'PERSON'.
@@ -12,6 +12,9 @@ descriptorForPerson: aDescriptor
 	(aDescriptor newMapping: DirectMapping)
 		from: #lastName
 		to: (table fieldNamed: 'lastName').
+	(aDescriptor newMapping: DirectMapping)
+		from: #birthDate
+		to: (table fieldNamed: 'birthDate').
 	(aDescriptor newMapping: ToManyMapping)
 		attributeName: #invoices;
 		orderBy: [:each |

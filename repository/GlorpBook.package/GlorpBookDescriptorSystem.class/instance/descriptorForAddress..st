@@ -1,4 +1,4 @@
-tables
+descriptions
 descriptorForAddress: aDescriptor
 	| table |
 	table := self tableNamed: 'ADDRESS'.

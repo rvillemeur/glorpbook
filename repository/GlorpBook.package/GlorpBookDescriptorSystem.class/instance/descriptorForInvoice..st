@@ -1,4 +1,4 @@
-tables
+descriptions
 descriptorForInvoice: aDescriptor
 	| table |
 	table := self tableNamed: 'INVOICE'.

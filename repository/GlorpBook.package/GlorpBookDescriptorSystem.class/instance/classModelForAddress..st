@@ -1,4 +1,4 @@
-as yet unclassified
+model
 classModelForAddress: aClassModel
 	(aClassModel newAttributeNamed: #id) useDirectAccess: true.
 	aClassModel newAttributeNamed: #street.

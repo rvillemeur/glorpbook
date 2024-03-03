@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "DescriptorSystem",
-	"category" : "GlorpBook",
+	"category" : "GlorpBook-book",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

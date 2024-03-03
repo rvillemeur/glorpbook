@@ -1,5 +1,7 @@
-accessing
+connection open/close
 session
-| session| 
+
+	| session |
 	session := GlorpBookDescriptorSystem sessionForLogin: self login.
-	^session login.
+	session login.
+	^session.

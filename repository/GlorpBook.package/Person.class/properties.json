@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "GlorpBookObject",
-	"category" : "GlorpBook",
+	"category" : "GlorpBook-book",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -10,7 +10,8 @@
 		"lastName",
 		"addresses",
 		"invoices",
-		"tags"
+		"tags",
+		"birthDate"
 	],
 	"name" : "Person",
 	"type" : "normal"

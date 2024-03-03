@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "GlorpBook",
+	"category" : "GlorpBook-book",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

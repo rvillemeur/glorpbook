@@ -1,4 +1,4 @@
-as yet unclassified
+model
 classModelForInvoiceItem: aClassModel
 	(aClassModel newAttributeNamed: #id) useDirectAccess: true.
 	aClassModel newAttributeNamed: #invoice type: Invoice.
