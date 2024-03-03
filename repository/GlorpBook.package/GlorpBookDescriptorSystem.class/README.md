@@ -1,0 +1,1 @@
+Descriptor system for the invoice domain model

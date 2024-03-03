@@ -1,5 +1,6 @@
 descriptions
 descriptorForAddress: aDescriptor
+
 	| table |
 	table := self tableNamed: 'ADDRESS'.
 	aDescriptor table: table.
@@ -11,4 +12,4 @@ descriptorForAddress: aDescriptor
 		to: (table fieldNamed: 'street').
 	(aDescriptor newMapping: DirectMapping)
 		from: #city
-		to: (table fieldNamed: 'zip').
+		to: (table fieldNamed: 'zip')

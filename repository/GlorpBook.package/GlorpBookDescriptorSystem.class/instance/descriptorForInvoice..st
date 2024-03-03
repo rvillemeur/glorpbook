@@ -1,5 +1,6 @@
 descriptions
 descriptorForInvoice: aDescriptor
+
 	| table |
 	table := self tableNamed: 'INVOICE'.
 	aDescriptor table: table.
@@ -9,12 +10,10 @@ descriptorForInvoice: aDescriptor
 	(aDescriptor newMapping: DirectMapping)
 		from: #issueDate
 		to: (table fieldNamed: 'issueDate').
-	(aDescriptor newMapping: OneToOneMapping)
-		attributeName: #person.
-	(aDescriptor newMapping: OneToOneMapping)
-		attributeName: #address.
+	(aDescriptor newMapping: OneToOneMapping) attributeName: #person.
+	(aDescriptor newMapping: OneToOneMapping) attributeName: #address.
 	(aDescriptor newMapping: ToManyMapping)
 		attributeName: #items;
-		orderBy: [:each |
-			(each getTable: 'INVOICEITEM') getField: 'position'];
-		writeTheOrderField.
+		orderBy: [ :each |
+			(each getTable: 'INVOICEITEM') getField: 'position' ];
+		writeTheOrderField

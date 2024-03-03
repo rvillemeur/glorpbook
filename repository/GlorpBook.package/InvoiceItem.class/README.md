@@ -1,0 +1,1 @@
+Domain model for an Item, associated with an Invoice
